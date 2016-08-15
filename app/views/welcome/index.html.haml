@@ -1,1 +1,32 @@
-%h1	This is the welcome placeholder
+#banner
+	.banner_content
+		%h1 Food Sharing App
+		%p Shtand Street. Share Your Food.
+		%button= link_to "Sign Up", new_user_registration_path
+
+#testimonial
+	.wrapper
+		%p.quote "The greates foodsharing application."
+		%p.name - Shtand Street Residents
+
+#callouts
+	.callouts_inner
+		.wrapper
+			.callout
+				%h2 Notes
+				%p Some Styling osdsdc
+			.callout
+				%h2 Notes
+				%p Some Styling again
+			.callout
+				%h2 Notes
+				%p Some Styling
+
+#bottom_cta
+	.wrapper
+	%h2 For Real!
+	%p I want you to sign up..
+	%button= link_to "Click Me!", new_user_registration_path
+
+%footer
+	%p &copy; 2016 AniaP 
