@@ -2,6 +2,10 @@
 	#note_show
 		%h1.title= @note.title
 		%p= simple_format(@note.content)
+		%br/
+		Contact:
+		%p= @note.phone 
+	
 
 		.buttons
 			= link_to "Edit", edit_note_path(@note), class: "button"

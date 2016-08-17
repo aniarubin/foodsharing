@@ -1,4 +1,6 @@
 = simple_form_for @note do |f|
-	=f.input :title
-	=f.input :content
+	=f.input :title, required: true, placeholder: "f.ex bananas 1kg"
+	=f.input :content, placeholder: "add more information"
+	=f.input :phone, placeholder: "let people contact you"
+	
 	=f.button :submit, class: "button"
